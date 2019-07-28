@@ -2,11 +2,66 @@
 <html>
 
 <head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
+	<title>Q4</title>
+	<style>
+	#no{
+		background:red;
+
+	}
+	#yes{
+		background: green;
+		
+	}
+	
+	</style>
 </head>
 
 <body>
+
+ <div class="main">Main div is here</div>
+ <button id="no"  >red</button>
+ <button id="yes">green</button>
+
+
 	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
 </body>
-
 </html>
+
+<script>
+$(document).ready(function(){
+	$("#no").on("click",function(){
+		$(".main").css("background-color","red");
+
+	});
+});
+</script>
+
+<script>
+		$(document).ready(function(){
+			$("#yes").on("click",function(){
+			$(".main").css("background-color","green");
+			});	
+			});
+		</script>
+
+
+
+<!-- Q4
+You need to write the solution in the q4.html file
+1. Add to q4.html file:
+  a. div:with text 'Main div is here' with class => "main"
+  b. button: with text 'Red'    with id => "no"
+  c. button: with text 'Green'  with id => "yes"
+  d. change the title to Q4
+
+2. Add these style int he same file q4.html:
+  a. id => "no"     the color of the background  =>   Red
+  b. id => "yes"    the color of the background  =>   Green
+
+3. Using jQuery add these logic to q4.html in the same file:
+  a. when click on the button with id "no"  => cahnge the color of the div with class "main" to red
+  b. when click on the button with id "yes" => cahnge the color of the div with class "main" to green
+*/ -->
